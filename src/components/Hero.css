@@ -1,0 +1,144 @@
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--bg-color);
+    padding: 50px;
+    border-radius: 8px;
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-size: cover;
+    animation: stars 60s linear infinite;  
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1068px) {
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+
+  @keyframes stars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  translate: -50% -50%;
+  background: conic-gradient(from var(--angle),transparent 60%, rgb(1, 199, 199));
+  padding: 5px;
+  border-radius: 10px;
+  z-index: -1;
+  animation: spin 10s linear infinite;
+  }
+
+  @keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+  }
+
+  @keyframes spin2{
+    from{
+        --angle: 360deg;
+    }
+    to{
+        --angle: 0deg;
+    }
+  }
+
+@keyframes blue-glow {
+    0% {
+      box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+    }
+    50% {
+      box-shadow: 0 0 20px #00f, 0 0 40px #00f;
+    }
+    100% {
+      box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+    }
+  }
+
+.text {
+    max-width: 600px;
+    flex: 2;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #0ff;
+    text-shadow: 0 0 15px #0ff, 0 0 20px #0ff, 0 0 20px #0ff, 0 0 40px #00f;
+    animation: glow-pulse 24s infinite alternate;
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #0ff;
+  background: linear-gradient(180deg, #111, #333);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 8px #0ff;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.download-btn:hover {
+  color: #0ff;
+  border-color: rgb(30, 255, 0);
+  box-shadow: 0 0 10px rgb(30, 255, 0), 0 0 20px rgb(5, 128, 52);
+}
