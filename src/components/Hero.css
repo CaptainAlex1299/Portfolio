@@ -34,6 +34,18 @@
     }
   }
 
+  @media (max-width: 400px) {
+    .hero {
+    height: 100%;
+  }
+    .header {
+      font-size: 36px;
+    }
+    .hero-content {
+      font-size: 12px;
+    }
+}
+
   @keyframes stars {
     from {
         background-position: 0 0;
