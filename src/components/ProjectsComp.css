@@ -1,0 +1,87 @@
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensures it takes full height of the viewport */
+    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .projects-section {
+        width: 100%;
+        margin: 0 auto;
+      margin-top: 100px;
+    }
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    color: #00FFFF;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Bigger images */
+    gap: 20px;
+    justify-items: center; /* Centers the items horizontally */
+    width: 100%; /* Ensures the grid fills the container */
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column; /* Stack the image and info vertically */
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px; /* Increase card size */
+    height: 300px; /* Set a fixed height for the card */
+  }
+  
+  .project-image {
+    width: 100%; /* Make the image fill the card */
+    height: 70%; /* Limit the height to 70% of the card */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .project-info {
+    flex-grow: 1; /* Ensure the description takes up the remaining space */
+    padding: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 10px; /* Space between image and text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Equalize space inside the info block */
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: #00FFFF;
+    font-weight: bold;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #B0B0B0;
+    flex-grow: 1; /* Ensure the description block grows to match height */
+  }
+  

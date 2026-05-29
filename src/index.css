@@ -1,0 +1,44 @@
+:root {
+  --bg-color: #0d1117;
+  --primary-color: #00e1ff;
+  --accent-color: #ff00ff;
+  --text-color: #e6e6e6;
+  --hover-color: #01883d;
+  --card-bg: #202833;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
