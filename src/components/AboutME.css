@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about-me{
     display: flex;
     flex-direction: column;
@@ -46,4 +47,54 @@
         flex: 2;
         padding-right: 2rem;
       }
+=======
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 20px;
+    padding-top: 100px;
+    gap: 220px;
+}
+
+.about-container{
+    max-width: 500px;
+    text-align: start;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.image-section{
+    display: none;
+}
+
+.my-image{
+    max-width: 300px;
+    border: solid 3px #0ff;
+    border-radius: 10px;
+}
+
+.about-text{
+    padding-top: 20px;
+}
+
+@media (min-width: 968px) {
+    .image-section{
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .about-me {
+      flex-direction: row;
+    }
+
+    .about-text {
+        flex: 2;
+        padding-right: 2rem;
+      }
+>>>>>>> 704cbfca9e0c0559b773418092a24f8e48d4a144
   }
