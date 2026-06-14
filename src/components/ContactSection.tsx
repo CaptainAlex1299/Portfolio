@@ -46,6 +46,7 @@ const ContactSection: React.FC = () => {
 
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
+          user-drag="none"
           type="text"
           name="name"
           placeholder="Your Name"
@@ -54,6 +55,7 @@ const ContactSection: React.FC = () => {
           required
         />
         <input
+          user-drag="none"
           type="email"
           name="email"
           placeholder="Your Email"
@@ -62,6 +64,7 @@ const ContactSection: React.FC = () => {
           required
         />
         <textarea
+          user-drag="none"
           name="message"
           placeholder="Your Message"
           value={formData.message}
