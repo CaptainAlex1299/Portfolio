@@ -1,3 +1,13 @@
+textarea, textarea{
+  resize: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #111111 inset !important;
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
 .contact-section {
     background-color: var(--bg-color);
     color: white;
@@ -34,6 +44,12 @@
     border-radius: 0.5rem;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  textarea:focus, input:focus {
+    background: #111;
+    border: 1px solid #333;
+    color: white;
   }
   
   .contact-form input:focus,
