@@ -1,34 +1,33 @@
-# React + TypeScript + Vite
+#  Portfolio Website (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio built using React. It showcases my projects, skills, and experience as a developer. The goal of this project is to present my work in a clean, modern, and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+-  Built with React
+-  Fully responsive design (mobile-friendly)
+-  Modern UI with custom styling
+-  Smooth navigation between sections
+-  Projects showcase section
+-  Contact section
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React
+- JavaScript / TypeScript
+- CSS / SCSS
+- React Icons
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+## Getting Started
+
+Clone the repo and run locally:
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+npm install
+npm start
+npm run dev
