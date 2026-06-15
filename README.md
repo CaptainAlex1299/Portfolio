@@ -26,7 +26,7 @@ This is my personal portfolio built using React. It showcases my projects, skill
 Clone the repo and run locally:
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/CaptainAlex1299/Portfolio
 cd your-portfolio
 npm install
 npm start
