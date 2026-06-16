@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="text">
               <h1>Hi, I'm Alexander</h1>
               <p>
-                I'm a web developer passionate about building functional and responsive websites.
+                I'm a developer and I build websites, check out my doggy, it can do a few tricks!.
               </p>
               <a href="./alexander-forrest-resume.pdf" download className="download-btn">
       <svg

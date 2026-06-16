@@ -62,9 +62,11 @@ const CanvasComponent = () => {
   return (
     <div className="Doggy-Container">
       <div>
+        
       <canvas id="Doggy" ref={canvasRef} width={600} height={600} />
       </div>
       <div className="Doggy-Dropdown">
+        <h3></h3>
       <select onChange={(e) => setdogState(e.target.value)}>
         <option value="idle">Idle</option>
         <option value="jump">Jump</option>

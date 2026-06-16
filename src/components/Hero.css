@@ -28,9 +28,9 @@
 
 @media (max-width: 1068px) {
     .hero-content {
-      display: flex;
       flex-direction: column;
       max-width: 100%;
+      flex-wrap: nowrap;
     }
   }
 
