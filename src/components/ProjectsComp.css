@@ -27,15 +27,15 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Bigger images */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    justify-items: center; /* Centers the items horizontally */
-    width: 100%; /* Ensures the grid fills the container */
+    justify-items: center;
+    width: 100%;
   }
   
   .project-card {
     display: flex;
-    flex-direction: column; /* Stack the image and info vertically */
+    flex-direction: column;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -44,33 +44,33 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     width: 100%;
-    max-width: 350px; /* Increase card size */
-    height: 300px; /* Set a fixed height for the card */
+    max-width: 350px;
+    height: 300px;
   }
   
   .project-image {
-    width: 100%; /* Make the image fill the card */
-    height: 70%; /* Limit the height to 70% of the card */
-    background-size: cover; /* Ensures the image covers the container */
+    width: 100%;
+    height: 70%;
+    background-size: cover;
     background-position: center;
     transition: transform 0.3s ease-in-out;
   }
   
   .project-card:hover .project-image {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
   }
   
   .project-info {
-    flex-grow: 1; /* Ensure the description takes up the remaining space */
+    flex-grow: 1;
     padding: 10px;
     color: white;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     text-align: left;
-    margin-top: 10px; /* Space between image and text */
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Equalize space inside the info block */
+    justify-content: space-between;
   }
   
   .project-title {
